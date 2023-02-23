@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Largestmatrixe
+class Largestmatrix
 {
 	public static void main (String args[])
 	{
