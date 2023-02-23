@@ -17,46 +17,46 @@ class Matrixpro
 		System.out.println("Rows and columns are not equal");
 		else
 		{
-		System.out.println(" Elements for the 1st matrix");
+			System.out.println(" Elements for the 1st matrix");
 		
-		for(int i=0;i<r1;i++)
-		{
-			for(int j=0;j<c1;j++)
+			for(int i=0;i<r1;i++)
 			{
-				
-				 a[i][j] = obj.nextInt();
+				for(int j=0;j<c1;j++)
+				{
+					
+					 a[i][j] = obj.nextInt();
+				}
 			}
-		}
-		System.out.println(" Elements for the 2nd matrix");
+			System.out.println(" Elements for the 2nd matrix");
 		
-		for(int i=0;i<r2;i++)
-		{
-			for(int j=0;j<c2;j++)
+			for(int i=0;i<r2;i++)
 			{
-				 b[i][j] = obj.nextInt();
+				for(int j=0;j<c2;j++)
+				{
+					 b[i][j] = obj.nextInt();
+				}
 			}
-		}
 		
-		for(int i=0;i<r1;i++)
-		{
-			for(int j=0;j<c2;j++)
+			for(int i=0;i<r1;i++)
 			{
-				for(int k=0;k<r2;k++)
-				c[i][j]+=a[i][k]*b[k][j];
-			}
+				for(int j=0;j<c2;j++)
+				{
+					for(int k=0;k<r2;k++)
+					c[i][j]+=a[i][k]*b[k][j];
+				}
 			
-		}
-		System.out.println("Product of the matrix ");
-		for(int i=0;i<r1;i++)
-		{
-			for(int j=0;j<c2;j++)
-			{
-			System.out.print(c[i][j]+" ");
 			}
-			System.out.println(" ");
+			System.out.println("Product of the matrix ");
+			for(int i=0;i<r1;i++)
+			{
+				for(int j=0;j<c2;j++)
+				{
+					System.out.print(c[i][j]+" ");
+				}
+				System.out.println(" ");
 			
-		}
+			}
 		
 		}
-}
+	}
 }
